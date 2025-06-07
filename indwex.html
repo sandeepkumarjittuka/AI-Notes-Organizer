@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Notes Organizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>AI Notes Organizer</h1>
+    <form id="noteForm">
+      <input type="text" id="noteTitle" placeholder="Note Title" required />
+      <textarea id="noteContent" placeholder="Write your note here..." required></textarea>
+      <button type="submit">➕ Add Note</button>
+    </form>
+
+    <div class="controls">
+      <input type="search" id="searchInput" placeholder="Search notes..." />
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Ideas">Ideas</option>
+        <option value="Misc">Misc</option>
+      </select>
+      <button id="toggleDarkMode">🌙 Toggle Dark Mode</button>
+    </div>
+
+    <div id="notesContainer" class="notes-grid"></div>
+  </div>
+<script src="script.js"></script>
+
+</body>
+</html>
